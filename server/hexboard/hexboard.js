@@ -39,7 +39,11 @@ var HexBoard = function() {
     nano: {
       cols: 4,
       rows: 3
-    }
+    },
+    one: {
+      cols: 1,
+      rows: 1
+    }    
   };
 
   var layout = layouts[config.get('HEXBOARD_SIZE')];
