@@ -426,7 +426,7 @@
                 "creationTimestamp": null
             },
             "spec": {
-                "host": "",
+                "host": "hexboard.tempdata.nl",
                 "to": {
                     "kind": "Service",
                     "name": "hexboard"
