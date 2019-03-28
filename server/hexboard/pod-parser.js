@@ -67,7 +67,8 @@ var PodParser = function() {
       update.data = {
         id: podNumber(replicaName),
         name: replicaName,
-        hostname: podName + '-summit3.apps.summit.paas.ninja',
+        //hostname: podName + '-summit3.apps.summit.paas.ninja',
+        hostname: podName + '.tempdata.nl',
         stage: update.type,
         type: 'event',
         timestamp: update.timestamp,
