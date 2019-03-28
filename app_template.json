@@ -158,7 +158,7 @@
                         }
                     }
                 ],
-                "replicas": 1,
+                "replicas": 0,
                 "selector": {
                     "deploymentconfig": "sketchpod"
                 },
