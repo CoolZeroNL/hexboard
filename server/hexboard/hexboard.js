@@ -47,6 +47,7 @@ var HexBoard = function() {
   };
 
   var layout = layouts[config.get('HEXBOARD_SIZE')];
+  console.log(config.get('HEXBOARD_SIZE'));
   layout.count = layout.cols * layout.rows;
 
   var hexagons = _.range(layout.count).map(function(index) {
