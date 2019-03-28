@@ -438,12 +438,11 @@
             "kind": "Route",
             "apiVersion": "v1",
             "metadata": {
-                "name": "hexboard-mobile",
+                "name": "hexboard",
                 "creationTimestamp": null
             },
             "spec": {
-                "host": "hexboard.tempdata.nl",
-                "path": "/mobile",
+                "host": "",
                 "to": {
                     "kind": "Service",
                     "name": "hexboard"
