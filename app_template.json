@@ -20,7 +20,7 @@
         },
         {
             "description": "builder image",
-            "value": "nodejs:latest",
+            "value": "nodejs:6",
             "name": "BUILDER_IMAGE"
         },
         {
