@@ -450,6 +450,22 @@
                 }
             },
             "status": {}
-        }
+        },
+        {
+            "kind": "Route",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "sketchpod",
+                "creationTimestamp": null
+            },
+            "spec": {
+                "host": "sketchpod.tempdata.nl",
+                "to": {
+                    "kind": "Service",
+                    "name": "sketchpod"
+                }
+            },
+            "status": {}
+        }        
     ]
 }

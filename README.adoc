@@ -179,7 +179,7 @@ To scale the number of hexagons (either up or down) run the command:
 oc scale dc/sketchpod --replicas=<number>
 ----
 
-After scaling up, try submitting sketches by visiting the hexboard's bundled mobile web submission form, at `http://your-hexboard-hostname/mobile/`.
+After scaling up, try submitting sketches by visiting the hexboard's bundled mobile web submission form, at `http://hexboard.tempdata.nl/mobile`.
 
 = Auto-Recovery
 After scaling up, the hexboard provides a nice way to visualize Kubernetes' support for auto-healing the containerized environments.
