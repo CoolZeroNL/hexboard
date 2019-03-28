@@ -63,7 +63,7 @@ var PodParser = function() {
     } else {
       var replicaName = update.object.metadata.name;
       //bundle the pod data
-      // console.log(tag, 'name',update.object.spec.containers[0].name, update.object.metadata.name)
+       console.log(tag, 'name',update.object.spec.containers[0].name, update.object.metadata.name)
       update.data = {
         id: podNumber(replicaName),
         name: replicaName,
