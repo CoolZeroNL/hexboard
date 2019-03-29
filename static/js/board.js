@@ -78,8 +78,7 @@ hex.board = (function board(d3, Rx) {
     };
 
     honeycomb.dimensions = {
-      //x: (honeycomb.cols + 3/4) * honeycomb.spacing.x       // create offset when resizing.. [22]https://github.com/2015-Middleware-Keynote/hexboard/issues/22
-      x: (honeycomb.cols + 3/4) * honeycomb.spacing.x           // fix for [22]
+      x: (honeycomb.cols + 3/4) * honeycomb.spacing.x
     , y: (honeycomb.rows + 1) * honeycomb.spacing.y
     };
 
