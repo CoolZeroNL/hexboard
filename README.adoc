@@ -160,7 +160,6 @@ The number of pods in the hexboard can be controlled by setting the `HEXBOARD_SI
 | tiny | 32 | _large laptop allocation_
 | micro | 24 | _medium laptop allocation_
 | nano | 12 | _small laptop allocation_
-| one | 1 | _very small laptop allocation_
 |===
 
 [source, bash]

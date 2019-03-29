@@ -30,7 +30,7 @@
         },
         {
             "description": "The total number of hexagons (containers) to display in the UI",
-            "value": "micro",
+            "value": "xsmall",
             "name": "HEXBOARD_SIZE"
         },
         {
