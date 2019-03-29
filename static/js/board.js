@@ -78,7 +78,8 @@ hex.board = (function board(d3, Rx) {
     };
 
     honeycomb.dimensions = {
-      x: (honeycomb.cols + 3/4) * honeycomb.spacing.x
+      // x: (honeycomb.cols + 3/4) * honeycomb.spacing.x
+      x: (honeycomb.cols + 1) * honeycomb.spacing.x
     , y: (honeycomb.rows + 1) * honeycomb.spacing.y
     };
 
