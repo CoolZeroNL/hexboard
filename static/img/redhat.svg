@@ -9,10 +9,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="Layer_1"
    data-name="Layer 1"
-   viewBox="0 0 1500 274"
+   viewBox="0 0 1530 274"
    version="1.1"
-   sodipodi:docname="redhat-3.svg"
-   width="1500"
+   sodipodi:docname="redhat.svg"
+   width="1530"
    height="274"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
@@ -46,7 +46,9 @@
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Layer_1" />
+     inkscape:current-layer="Layer_1"
+     inkscape:measure-start="1437,223"
+     inkscape:measure-end="1503.01,222.292" />
   <defs
      id="defs3794">
     <style
