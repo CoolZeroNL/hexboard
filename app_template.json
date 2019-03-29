@@ -25,12 +25,12 @@
         },
         {
             "description": "Number of winners",
-            "value": "10",
+            "value": "1",
             "name": "WINNER_COUNT"
         },
         {
             "description": "The total number of hexagons (containers) to display in the UI",
-            "value": "micro",
+            "value": "xsmall",
             "name": "HEXBOARD_SIZE"
         },
         {
