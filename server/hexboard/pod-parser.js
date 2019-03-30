@@ -90,8 +90,8 @@ var PodParser = function() {
         update.data.ip = update.object.status.podIP;
         update.data.port = 8080;
         // Construct a route to the back-end service
-        if(config.get('PROXY')){
-          update.data.url = "http://" + config.get('PROXY') + '/direct/' + update.data.ip + '/';
+        if(config.get('DIRECTPROXY')){
+          update.data.url = "http://" + config.get('DIRECTPROXY') + '/direct/' + update.data.ip + '/';
         }else{
           update.data.url = '/direct/' + update.data.ip + '/';
         }
