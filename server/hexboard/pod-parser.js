@@ -90,13 +90,16 @@ var PodParser = function() {
         update.data.ip = update.object.status.podIP;
         update.data.port = 8080;
         // Construct a route to the back-end service
-        if(config.get('DIRECTPROXY')){
-          update.data.url = "http://" + config.get('DIRECTPROXY') + '/direct/' + update.data.ip + '/';
+        if(config.get('PROXY')){
+          update.data.url = "http://" + config.get('PROXY') + '/direct/' + update.data.ip + '/';
         }else{
           update.data.url = '/direct/' + update.data.ip + '/';
         }
-        console.log(update.data.url)
+        
+        update.data.directurl = 'http://m.tempdata.nl/direct/' + update.data.ip + '/';
+
         update.data.stage = 4;
+
       } else {
         console.log(tag, "New data type found:" + JSON.stringify(update, null, '  '))
       }

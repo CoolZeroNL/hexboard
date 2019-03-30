@@ -23,6 +23,7 @@ angular.module('starter.controllers', [])
     var items = localStorage.getItem('keynote2015-mobile-app');
     try {
       items = JSON.parse(items);
+      console.log(items);
     } catch (err) {
       items = {containers: []};
     }
