@@ -2,3 +2,7 @@
 .item-image img:first-child, .item-image .list-img {
     width: 90%;
 }
+
+.spacer{
+    width: 90%;
+}

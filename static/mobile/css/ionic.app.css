@@ -3997,7 +3997,7 @@ a.subdued {
     color: inherit; }
   .bar .button {
     z-index: 1;
-    padding: 0 8px;
+    padding: 0 12px;          /* edit */
     min-width: initial;
     min-height: 31px;
     font-weight: 400;
