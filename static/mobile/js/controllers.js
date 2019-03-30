@@ -43,7 +43,8 @@ angular.module('starter.controllers', [])
       ctx = canvas.getContext("2d");
 
     $scope.backAndClear = function () {
-      ctx.clearRect(0,0, document.width, document.height);
+      //ctx.clearRect(0,0, document.width, document.height);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
     };
 
     $scope.submitToContainer = function () {
