@@ -95,11 +95,8 @@ var PodParser = function() {
         }else{
           update.data.url = '/direct/' + update.data.ip + '/';
         }
-        
-        update.data.directurl = 'http://m.tempdata.nl/direct/' + update.data.ip + '/';
-
+        console.log(update.data.url)
         update.data.stage = 4;
-
       } else {
         console.log(tag, "New data type found:" + JSON.stringify(update, null, '  '))
       }
