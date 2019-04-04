@@ -274,8 +274,8 @@ var verifyStream = function(env) {
     } else {
       return Rx.Observable.merge(
         Rx.Observable.just(parsed)
-      , verifyPodAvailable(parsed, 20000)
-        .retryWhen(retryVerification(500))
+      , verifyPodAvailable(parsed, 20000)     //if fails, turn to: 200000
+        .retryWhen(retryVerification(500))    //if fails, ruen to: 5000
         .catch(Rx.Observable.empty())
         .filter(function(parsed) {
           return parsed;
@@ -318,7 +318,7 @@ var watchStream = function(env, stream) {
     })
     .flatMap(function(pod) {
       return Rx.Observable.return(pod).flatMap(function(pod) {
-        return verifyPodAvailable(pod, 2000)
+        return verifyPodAvailable(pod, 2000)    // if fails, turn to: 20000
         .tap(function(pod) {
           var subject = env.subjects[pod.data.id];
           if (pod.data.stage !== 5) {
@@ -342,7 +342,7 @@ var watchStream = function(env, stream) {
           }
         })
       })
-      .retryWhen(retryVerification(100))
+      .retryWhen(retryVerification(100))    // if fails, turn to: 5000
       .catch(Rx.Observable.return(pod));
     })
     // .subscribeOnError(function(err) {
