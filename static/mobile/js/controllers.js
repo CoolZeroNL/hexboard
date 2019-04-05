@@ -61,13 +61,8 @@ angular.module('starter.controllers', [])
         // Need the container link
         var items = localStorage.getItem('keynote2015-mobile-app');
 
-        console.log("from localStorage");
-        console.log(items);
-
         if (!items) {
           items = {containers: []};
-          console.log("!images");
-          console.log(items);
         }
 
         try {
