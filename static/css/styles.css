@@ -5833,3 +5833,11 @@ body {
   content: url(../img/qrcode.svg);
   position: absolute;
 }
+
+.url {
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}

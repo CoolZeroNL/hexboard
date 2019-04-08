@@ -44,6 +44,11 @@ hex.controls = (function dataSimulator(d3, Rx) {
     });
   });
 
+  Rx.Observable.fromEvent(d3.select('#show-qr').node(), 'click').subscribe(function() {
+      console.log("Show QR");
+    });
+  });
+
   var plabackButton = document.getElementById('start-playback');
   if (plabackButton) {
     Rx.Observable.fromEvent(plabackButton, 'click').subscribe(function() {
