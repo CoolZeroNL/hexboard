@@ -87,7 +87,7 @@
   </nav>
 
 
-  <div id="divMsg" class="url"><h1><b>http://m.tempdata.nl</b></h1><br></div>
+  <div id="divMsg" class="url" style="display:none"><h1><b>http://m.tempdata.nl</b></h1><br></div>
 
   <div class="legend">
     <ul>
@@ -102,10 +102,28 @@
 
   <div class="svg-container">
       <!-- <img src="img/qrcode.svg" alt="m.tempdata.nl" width="104"> -->
-      <div id="divMsg" class="qrcode"></div>
+      <div id="divMsg2" class="qrcode" style="display:none"></div>
   </div><!-- /svg-container-->
 </body>
 
 
+<script type="text/javascript">
+  function showHideDiv(ele) {
+    var srcElement = document.getElementById(ele);
+    if (srcElement != null) {
+      if (srcElement.style.display == "block") {
+        srcElement.style.display = 'none';
+      }
+      else {
+        srcElement.style.display = 'block';
+      }
+      return false;
+    }
+  }
+</script>
+<center>
+		<h1>Show/Hide Div on Button Click using JavaScript.</h1>
+		<input type="button" value="Show/Hide" onClick="showHideDiv('divMsg')"/><br><br>
+	</center>
 
 </html>

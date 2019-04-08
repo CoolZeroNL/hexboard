@@ -45,8 +45,8 @@ hex.controls = (function dataSimulator(d3, Rx) {
 
   Rx.Observable.fromEvent(d3.select('#show-qr').node(), 'click').subscribe(function() {
     console.log("show qr");
-    showHideDiv('url');
-    showHideDiv('qrcode');
+    showHideDiv('divMsg');
+    showHideDiv('divMsg2');
   });
 
   Rx.Observable.fromEvent(d3.select('#push-sketches').node(), 'click').subscribe(function() {
