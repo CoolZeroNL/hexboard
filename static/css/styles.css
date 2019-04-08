@@ -5830,5 +5830,6 @@ body {
 }
 
 .qrcode {
-  background-image: url("img/qrcode.svg");
+  content: url(../img/qrcode.svg);
+  position: absolute;
 }
