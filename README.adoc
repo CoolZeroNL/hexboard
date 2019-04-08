@@ -1,17 +1,9 @@
 :toc: macro
 = Hexboard UI
 
-Container vizualization for link:http://openshift.com/[OpenShift platformV3]. As featured in the link:https://www.youtube.com/watch?v=wWNVpFibayA&t=26m48s[Red Hat Summit 2015 - JBoss Keynote demo]
+Container vizualization for link:http://openshift.com/[OpenShift platformV3]. 
 
 toc::[]
-
-= Basic Setup
-
-To get started, you'll need an OpenShiftV3 environment with a valid user account. This project also expects the link:https://github.com/openshift/origin/tree/master/examples/image-streams[basic set of openshift builder images] to have been installed under the openshift namespace.
-
-You can create your own OpenShiftV3 environment in Amazon EC2 using the link:https://github.com/2015-Middleware-Keynote/demo-ansible[demo-ansible] playbook.
-
-To create your own local OpenShift VM with Vagrant, see link:https://www.openshift.org/vm/[openshift.org/vm/].
 
 == Authentication
 [source, bash]
@@ -134,7 +126,7 @@ Set a server-side `ADMIN_TOKEN`:
 oc env dc/hexboard ADMIN_TOKEN="${ADMIN_TOKEN}"
 ----
 
-You'll need to set the same token in your browser to reveal the Admin UI controls.  Visit "http://YOUR_HEXBOARD/?admin=YOUR_ADMIN_TOKEN" to add administrative UI controls to your browser.
+You'll need to set the same token in your browser to reveal the Admin UI controls.  Visit "http://hexboard.tempdata.nl/?admin=YOUR_ADMIN_TOKEN" to add administrative UI controls to your browser.
 
 #### Winner Count
 The number of winning sketches is now adjustable via the `WINNER_COUNT` environment variable.  The default value is ten winners.
@@ -190,10 +182,6 @@ You can show this functionality by deleting a group of pods.  This example makes
 ----
 oc delete pod $(oc get pods | grep ^sketchpod | grep -v build | cut -f1 -s -d' ' | sort -R | head -n 5 | tr '\n' ' ')
 ----
-
-**WARNING:** There is a link:https://github.com/2015-Middleware-Keynote/hexboard/issues/30[known issue] that may cause display errors when pods are deleted.
-
-**Workaround:** Instead of showing autorecovery on the hexboard, show this feature using the OpenShift web console. Your project Overview page's view modes (list, topographical) both nicely illustrate how this feature works.
 
 = Local Development
 
