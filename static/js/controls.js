@@ -11,6 +11,19 @@ hex.controls = (function dataSimulator(d3, Rx) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
   };
 
+  function showHideDiv(ele) {
+    var srcElement = document.getElementById(ele);
+    if (srcElement != null) {
+      if (srcElement.style.display == "block") {
+        srcElement.style.display = 'none';
+      }
+      else {
+        srcElement.style.display = 'block';
+      }
+      return false;
+    }
+  }
+
   // Admin token management
   if(getParameterByName('logout') == 'true'){
     localStorage.clear();
@@ -31,9 +44,9 @@ hex.controls = (function dataSimulator(d3, Rx) {
   }
 
   Rx.Observable.fromEvent(d3.select('#show-qr').node(), 'click').subscribe(function() {
-    
     console.log("show qr");
-    
+    showHideDiv('url');
+    showHideDiv('qrcode');
   });
 
   Rx.Observable.fromEvent(d3.select('#push-sketches').node(), 'click').subscribe(function() {
