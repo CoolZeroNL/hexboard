@@ -5828,3 +5828,7 @@ body {
 #cover .fa {
   font-size: 200px;
 }
+
+.qrcode {
+  background-image: url("img/qrcode.svg");
+}
