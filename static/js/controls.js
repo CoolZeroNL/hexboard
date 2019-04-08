@@ -30,6 +30,12 @@ hex.controls = (function dataSimulator(d3, Rx) {
     auth = "?token=" + adminToken;
   }
 
+  Rx.Observable.fromEvent(d3.select('#show-qr').node(), 'click').subscribe(function() {
+    
+    console.log("show qr");
+    
+  });
+
   Rx.Observable.fromEvent(d3.select('#push-sketches').node(), 'click').subscribe(function() {
     var xhr = d3.xhr('/api/sketch/random/10' + auth, function(err, res) {
       console.log(err || res);
@@ -41,11 +47,6 @@ hex.controls = (function dataSimulator(d3, Rx) {
     xhr.send('DELETE', function(err, res) {
       console.log('removing all sketches');
       console.log(err || res);
-    });
-  });
-
-  Rx.Observable.fromEvent(d3.select('#show-qr').node(), 'click').subscribe(function() {
-      console.log("Show QR");
     });
   });
 
